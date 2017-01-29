@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:padding="15sp"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    tools:context="Activity_FindBooks"
+    android:id="@+id/activity_find_books">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/searchView_findBooks"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff"
+                android:inputType="text"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search Book or Author"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Next -->"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:id="@+id/button_buySelectedBooks" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout_titleAndExpandButton"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="0.91"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.09"
+            android:layout_gravity="center"
+            android:background="@drawable/expand_list"
+            android:id="@+id/button_expandCollapse"/>
+    </LinearLayout>
+
+        <ExpandableListView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:groupIndicator="@null"
+            android:id="@+id/expandableListView_foundBooks"/>
+</LinearLayout>

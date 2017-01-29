@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true"
+    tools:context="activity_admin"
+    android:id="@+id/activity_admin">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0">
+
+            <TableRow>
+                <Button
+                    android:id="@+id/button_addBook"
+                    android:text="Add Book (not for sale)"
+                    style="@style/ButtonCustomStyle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_height="10dp"
+                    android:layout_width="match_parent"
+                    android:background="#000000"/>
+            </TableRow>
+
+            <TableRow android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/TextView_title"
+                    android:text="View and Delete Data Here Below"
+                    android:gravity="center_horizontal"
+                    style="@style/SpinnerCustomStyle"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow><TextView android:text="Select Data Type:" style="@style/SmallTopInstructions"/></TableRow>
+            <TableRow>
+                <Spinner
+                    android:id="@+id/spinner_dataTypes"
+                    style="@style/SpinnerCustomStyle"/>
+            </TableRow>
+
+
+            <TableRow><TextView android:id="@+id/textView_selectInstance" style="@style/SmallTopInstructions"/></TableRow>
+            <TableRow>
+                <Spinner
+                    android:id="@+id/spinner_instances"
+                    style="@style/SpinnerCustomStyle"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView_dataDisplay"
+                    android:visibility="gone"
+                    style="@style/DataDisplay"/>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/button_deleteInstance"
+                    android:text="Delete item (Irreversible, Be Careful!)"
+                    style="@style/ButtonCustomStyle"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:textColor="#990011"/>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

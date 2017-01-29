@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/ListItemCustomStyle"
+    android:id="@+id/expandablelistview_book_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_AuthorName"
+            android:text="Author Name:\n"
+            style="@style/ListItemCustomStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_genre"
+            android:text="Genre:\n"
+            style="@style/ListItemCustomStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_language"
+            android:text="Language:\n"
+            style="@style/ListItemCustomStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_format"
+            android:text="Format:\n"
+            style="@style/ListItemCustomStyle"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="35dp"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_year"
+            android:text="Publication Year:\n"
+            style="@style/ListItemCustomStyle"
+            android:layout_marginBottom="2dp"/>
+        <LinearLayout
+            android:id="@+id/loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:gravity="center"
+            android:background="@drawable/background_clickable_pics">
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:indeterminate="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.7"
+                android:textColor="#000000"
+                android:text="Loading Image..."/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_bookImage"
+           android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:background="@drawable/background_clickable_pics"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_description"
+        android:text="Book Description:\n"
+        style="@style/ListItemCustomStyle"/>
+
+</LinearLayout>

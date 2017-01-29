@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true"
+    tools:context="Activity_AddBook"
+    android:id="@+id/activity_add_book">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/TextView_title"
+                    android:text="       Add New Book Here       "
+                    android:layout_gravity="center_horizontal"
+
+                    style="@style/TextMessageCustomStyle"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+            </TableRow>
+
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText_bookName"
+                    android:inputType="text"
+                    android:hint="Book Name"
+                    style="@style/TextFieldCustomStyle"/>
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText_authorName"
+                    android:inputType="text"
+                    android:hint="Author Name"
+                    style="@style/TextFieldCustomStyle"/>
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText_bookDescription"
+                    android:inputType="text"
+                    android:hint="Description"
+                    style="@style/TextFieldCustomStyle"/>
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText_year"
+                    android:inputType="number"
+                    android:hint="Year Published"
+                    android:maxLength="4"
+                    style="@style/TextFieldCustomStyle"/>
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText_imgUrl"
+                    android:inputType="textUri"
+                    android:hint="Image URL (optional)"
+                    style="@style/TextFieldCustomStyle"
+                    android:textStyle="italic"/>
+            </TableRow>
+
+            <TableRow><TextView android:text="Select Language:" style="@style/SmallTopInstructions"/></TableRow>
+            <TableRow>
+                <Spinner
+                    android:id="@+id/spinner_bookLanguage"
+                    style="@style/SpinnerCustomStyle"/>
+            </TableRow>
+
+
+            <TableRow><TextView android:text="Select Genre:" style="@style/SmallTopInstructions"/></TableRow>
+            <TableRow>
+                <Spinner
+                    android:id="@+id/spinner_bookGenre"
+                    style="@style/SpinnerCustomStyle"/>
+            </TableRow>
+
+            <TableRow><TextView android:text="Select Format:" style="@style/SmallTopInstructions"/></TableRow>
+            <TableRow>
+                <Spinner
+                    android:id="@+id/spinner_bookFormat"
+                    style="@style/SpinnerCustomStyle"/>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/button_submitNewBook"
+                    android:text="Submit Book"
+                    style="@style/ButtonCustomStyle" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+    <!-- style for buttons-->
+    <style name="ButtonCustomStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#111111</item>
+        <item name="android:background">@drawable/background_buttons</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- style for list header-->
+    <style name="ListHeaderCustomStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">#111111</item>
+        <item name="android:background">@drawable/background_list_header</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- style for list items-->
+    <style name="ListItemCustomStyle">
+        <item name="android:textColor">#111111</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/background_list_items</item>
+    </style>
+
+    <!-- style for text fields-->
+    <style name="TextFieldCustomStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorHint">#aaaeaa</item>
+        <item name="android:ems">12</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!-- style for text messages-->
+    <style name="TextMessageCustomStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">#2F4F4F</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/background_text_messages</item>
+    </style>
+
+    <!-- style for spinners-->
+    <style name="SpinnerCustomStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:spinnerMode">dialog</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!--style for small top instructions-->
+    <style name="SmallTopInstructions">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_column">0</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- style for Data Display (strings)-->
+    <style name="DataDisplay" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/background_list_items</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+</resources>

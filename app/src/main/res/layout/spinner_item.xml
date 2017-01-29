@@ -1,0 +1,12 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="#ffffff"
+    android:textSize="18sp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/background_spinner_items"
+    android:focusableInTouchMode="true"
+    android:id="@+id/spinner_item"/>

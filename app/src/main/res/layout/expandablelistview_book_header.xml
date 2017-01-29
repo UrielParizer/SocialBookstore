@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:id="@+id/expandablelistview_book_header">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="start|center_vertical"
+        android:layout_weight="0.91"
+        android:id="@+id/textView_bookName"
+        style="@style/ListHeaderCustomStyle">
+    </TextView>
+
+    <Space
+        android:layout_width="5dp"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.09"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:id="@+id/checkbox_isSelected"
+        android:background="@android:drawable/checkbox_off_background" />
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidcourse.socialbookstore">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="Social Bookstore"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".ui_controllers.Activity_Main"
+            android:label="Social Bookstore">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui_controllers.Management.Activity_Admin"
+            android:label="Activity_Admin"/>
+        <activity
+            android:name=".ui_controllers.Management.Activity_NewUser"
+            android:label="Activity_NewUser"/>
+        <activity
+            android:name=".ui_controllers.Provider.Activity_AddBook"
+            android:label="Activity_AddBook"/>
+        <activity
+            android:name=".ui_controllers.Provider.Activity_ManageBooksForSale"
+            android:label="Activity_ManageBooksForSale"/>
+        <activity
+            android:name=".ui_controllers.Client.Activity_FindBooks"
+            android:label="Activity_FindBooks"/>
+        <activity
+            android:name=".ui_controllers.Client.Activity_BuyingDetails"
+            android:label="Activity_BuyingDetails"/>
+        <activity
+            android:name=".ui_controllers.Client.Activity_Payment"
+            android:label="Activity_Payment"/>
+    </application>
+</manifest>

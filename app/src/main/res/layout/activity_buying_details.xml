@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="5sp"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true"
+    tools:context="Activity_BuyingDetails"
+    android:id="@+id/activity_buying_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:id="@+id/textView_title"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next -->"
+            android:textSize="16sp"
+            android:visibility="visible"
+            android:textAllCaps="false"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/button_nextPayment" />
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="4dp"
+        android:id="@+id/listView_FillBuyingDetails"/>
+
+</LinearLayout>

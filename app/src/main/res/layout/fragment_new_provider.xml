@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true"
+    tools:context="Fragment_NewProvider"
+    android:id="@+id/fragment_new_provider">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0">
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText_email"
+                    android:inputType="textEmailAddress"
+                    android:hint="E-Mail"
+                    android:maxLength="30"
+                    style="@style/TextFieldCustomStyle"/>
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText_password"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:maxLength="12"
+                    style="@style/TextFieldCustomStyle"/>
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText_name"
+                    android:inputType="textPersonName"
+                    android:hint="Name"
+                    android:maxLength="30"
+                    style="@style/TextFieldCustomStyle" />
+            </TableRow>
+
+            <TableRow>
+                <EditText
+                    android:id="@+id/editText_city"
+                    android:inputType="textPersonName"
+                    android:hint="City"
+                    android:maxLength="30"
+                    style="@style/TextFieldCustomStyle"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/button_submitNewUser"
+                    android:text="Register"
+                    style="@style/ButtonCustomStyle"/>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:focusableInTouchMode="true"
+    tools:context="Activity_NewUser"
+    android:id="@+id/activity_new_user">
+
+    <CheckBox
+        android:id="@+id/checkBox_isProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check here if you a Seller"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_text_fields"/>
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/checkBox_isProvider">
+        <fragment
+            android:id="@+id/fragment_place"
+            android:name="com.androidcourse.socialbookstore.ui_controllers.Management.Fragment_NewClient"
+            tools:layout="@layout/fragment_new_client"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill"/>
+    </LinearLayout>
+</RelativeLayout>

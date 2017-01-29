@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/background_spinner_items">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Name"
+        android:textSize="23sp"
+        android:layout_margin="3dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:id="@id/textView_bookName"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout_visibleWhenBookAvailable">
+
+        <TextView
+            android:text="Select Seller and amount:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#ffffff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:spinnerMode="dialog"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/background_spinner_items"
+                android:id="@+id/spinner_providers" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/background_spinner_items"
+                android:id="@+id/spinner_booksAmount"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:id="@+id/textView_price"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:text="This Book is unavailable at the time. sorry about that"
+        android:textColor="#eaffa3"
+        android:visibility="gone"
+        android:id="@+id/textView_notAvailable"/>
+
+</LinearLayout>
